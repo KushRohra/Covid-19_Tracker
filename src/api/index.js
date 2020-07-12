@@ -2,7 +2,12 @@ import axios from 'axios';
 
 const url = "https://covid19.mathdro.id/api";
 
+//const url2 = "https://covid-india-api.herokuapp.com/api";
+
 export const fetchData = async (country) => {
+    //const data = await axios.get(url2);
+    //console.log(data);
+    
     let changeableURL = url;
     if(country){
         changeableURL = `${url}/countries/${country}`;
